@@ -1,75 +1,123 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=PT+Serif:ital@1&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
-    --cor1: #97bdf5;
-    --cor2: #5f95e7;
-    --cor3: #427ed7;
-    --cor4: #256Edc;
-    --cor5: #1C4C96;
+    --cor1: #4ab4b8;
+    --cor2: #df93df;
+    --cor3: #bf63bf;
+    --cor4: #a032a0;
+    --cor5: #800180;
+
+    --font1: 'Cinzel', serif;
+    --font2: 'PT Serif', serif;
 }
 
 body {
-    background-color: rgb(107, 107, 241);
+    background-color: var(--cor4);
 }
 
-header {
-    background-image: linear-gradient(to right,#1C4C96,#256Edc,#427ed7,#97bdf5  );
-    display: flex;
-    justify-content: space-around;
-    font-weight: bold;
-    height: 100px;
-    align-items: center;
-    border-bottom: 1px solid rgb(0, 0, 0);
+#formulario {
+    box-shadow: inset;
 }
 
-#logo {
-    color: var(--cor1);
-}
-#logo p {
-    font-size: 1.2em;
-}
-
-#links a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    margin-right: 14px;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-#links a:hover {
-    background-color: var(--cor2);
-    color: var(--cor5);
-    transition-duration: 0.5s;
-}
-
-main{
+#login {
+    display: block;
     position: absolute;
-    height: 70vh;
+    background-color: white;
     width: 60vw;
-    background-color: rgba(0, 0, 0, 0.178);
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    padding: 10px;
+    height: 500px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-main p {
+#img{
+    display: block;
+    background: url(../imagens/padrao.jpg);
+    height: 150px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.formulario {
+    padding: 5px;
+}
+
+#titulo {
     text-align: center;
-    color: white;
+    color: #4e044e;
+    padding: 5px;
+    border-bottom: 1px solid lightgray;
 }
 
-main h1 {
-    color: var(--cor1);
+input[type=email]{
+    display: block;
+    border: none;
+    background-color: var(--cor1);
+    border-radius: 5px;
+    border: 1px solid var(--cor5);
+    width: 70%;
+    padding: 3px;
+}
+
+input[type=password] {
+    display: block;
+    border: none;
+    background-color: var(--cor1);
+    border-radius: 5px;
+    border: 1px solid var(--cor5);
+    width: 70%;
+    padding: 3px;
+}
+
+.label {
+    display: block;
+    margin-right: 10px;
+    font-weight: bold;
+    color: var(--cor5);
+}
+
+.caixa {
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+input::placeholder{
+    color: rgb(97, 17, 11);
+}
+
+input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+
+}
+
+#botao-enter {
+    display: block;
+    height: 40px;
+    width: 70%;
+    margin-top: 40px;
+    margin: 40px auto;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid var(--cor2);
+}
+
+#botao-enter:hover {
+    background-color: var(--cor4);
+    color: white;
+    transition-duration: .5s;
 }
 

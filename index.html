@@ -6,38 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
     <title>Aéreas</title>
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <p>Decole.com</p>
-        </div>
-        <div id="links">
-            <a href="">Home</a>
-            <a href="">Voar</a>
-            <a href="">Notícias</a>
-            <a href=""></a>
-        </div>
-    </header>
     <main>
-        <div id="text-left">
-            <p>Bem-vindo(a)</p>
-            <h1>Decole Transportes</h1>
-        </div> 
-        <div id="formulario">
-            <form action="login.php" method="post">
-                <div class="caixa">
-                    <label for="iusu">Usuário </label>
-                    <input type="email" name="usu" id="iusu" required placeholder="Insira seu usuário">
-                </div>
-                <div class="caixa">
-                    <label for="isenha">Senha</label>
-                    <input type="password" name="senha" id="isenha" required minlength="8" placeholder="Insira sua senha">
-                </div>
-                <input type="submit" value="Entrar">
-            </form>
-         </div>
+        <section id="login">
+            <div id="img">
+                
+            </div>
+            <div id="box">
+                <form action="login.php" method="post" class="formulario">
+                    <div id="titulo">
+                        <h1>Login</h1>
+                    </div>
+                    <div class="inputs">
+                        <div class="caixa">
+                            <label class="label" for="iusu">Usuário </label>
+                            <input type="email" name="usu" id="iusu" required placeholder="Insira seu usuário">
+                        </div>
+                        <div class="caixa">
+                            <label class="label" for="isenha">Senha</label>
+                            <input type="password" name="senha" id="isenha" required minlength="8" placeholder="Insira sua senha">
+                        </div>
+                        <input id="botao-enter" type="submit" value="Entrar">
+                    </div>
+                </form>
+             </div>
+        </section>
     </main>
 </body>
 </html>
