@@ -31,7 +31,7 @@ body {
     display: block;
     position: absolute;
     background-color: white;
-    width: 60vw;
+    width: 70vw;
     height: 500px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
@@ -39,6 +39,9 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 #img{
@@ -56,8 +59,9 @@ body {
 #titulo {
     text-align: center;
     color: #4e044e;
-    padding: 5px;
+    padding: 10px;
     border-bottom: 1px solid lightgray;
+    font-size: 1.1em;
 }
 
 input[type=email]{
@@ -83,7 +87,6 @@ input[type=password] {
 .label {
     display: block;
     margin-right: 10px;
-    font-weight: bold;
     color: var(--cor5);
 }
 
@@ -95,12 +98,14 @@ input[type=password] {
 
 input::placeholder{
     color: rgb(97, 17, 11);
+    font-size: 1.3em;
+
 }
 
 input:focus{
     box-shadow: 0 0 0 0;
     outline: 0;
-
+    outline: none;
 }
 
 #botao-enter {
@@ -119,5 +124,9 @@ input:focus{
     background-color: var(--cor4);
     color: white;
     transition-duration: .5s;
+}
+
+.inputs {
+    padding-top: 30px;
 }
 
